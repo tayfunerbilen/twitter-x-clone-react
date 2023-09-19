@@ -2,7 +2,7 @@ import {Popover, Disclosure} from "@headlessui/react";
 import {Link} from "react-router-dom";
 
 export default function More() {
-    const arrowPosition = (e) => {
+    const arrow = (e) => {
         const svg = e.currentTarget.querySelector('svg');
 
         if (svg.classList.contains('-rotate-180')) {
@@ -65,7 +65,7 @@ export default function More() {
 
                 <Disclosure>
                     <Disclosure.Button
-                        onClick={(e) => arrowPosition(e)}
+                        onClick={(e) => arrow(e)}
                         className="h-[52px] flex items-center justify-between w-full px-4 font-bold hover:bg-[#eff3f41a] transition-colors">
                         İçerik Üreticisi Stüdyosu
                         <svg viewBox="0 0 24 24" width={18.75} height={18.75}>
@@ -90,7 +90,7 @@ export default function More() {
                 </Disclosure>
                 <Disclosure>
                     <Disclosure.Button
-                        onClick={(e) => arrowPosition(e)}
+                        onClick={(e) => arrow(e)}
                         className="h-[52px] flex items-center justify-between w-full px-4 font-bold hover:bg-[#eff3f41a] transition-colors">
                         Profesyonel Araçlar
                         <svg viewBox="0 0 24 24" width={18.75} height={18.75}>
@@ -115,7 +115,7 @@ export default function More() {
                 </Disclosure>
                 <Disclosure>
                     <Disclosure.Button
-                        onClick={(e) => arrowPosition(e)}
+                        onClick={(e) => arrow(e)}
                         className="h-[52px] flex items-center justify-between w-full px-4 font-bold hover:bg-[#eff3f41a] transition-colors">
                         Ayarlar ve Destek
                         <svg viewBox="0 0 24 24" width={18.75} height={18.75}>
