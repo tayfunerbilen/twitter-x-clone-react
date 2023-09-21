@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* scrollbar rengi eklendi */
+
 body {
-    @apply bg-black text-white text-[15px];
+    @apply bg-black text-white text-[15px] scrollbar-thin scrollbar-thumb-gray-600
 }
 
 /*

@@ -1,6 +1,7 @@
 import {Outlet} from "react-router-dom";
 import Sidebar from "~/layouts/main/sidebar";
 import RightBar from "~/layouts/main/rightbar";
+import MessagesComponent from "~/components/messages";
 
 export default function MainLayout() {
 	return (
@@ -12,6 +13,7 @@ export default function MainLayout() {
 				</main>
 				<RightBar/>
 			</main>
+			<MessagesComponent/>
 		</div>
 	)
 }
