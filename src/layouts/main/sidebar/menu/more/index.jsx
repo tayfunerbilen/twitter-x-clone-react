@@ -121,7 +121,7 @@ export default function More() {
 								className="h-[52px] flex items-center justify-between w-full px-4 font-bold hover:bg-[color:var(--background-secondary)] transition-colors">
 								Ayarlar ve Destek
 								<svg viewBox="0 0 24 24" width={18.75} height={18.75} className={classNames({
-									"rotate-180 text-[color:var(--primary-color)]": open
+									"rotate-180 text-[color:var(--color-primary)]": open
 								})}>
 									<path
 										fill="currentColor"
