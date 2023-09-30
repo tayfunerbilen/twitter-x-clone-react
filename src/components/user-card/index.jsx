@@ -7,12 +7,14 @@ export default function UserCard({user}) {
 
 	return (
 		<button className="py-3 px-4 flex gap-3 transition-colors hover:bg-[color:var(--background-third)]">
-			<img src={user.avatar} className="w-10 h-10 rounded-full object-cover" alt=""/>
-			<div className="flex-1 max-w-full flex flex-col text-left">
-				<div className="text-[15px] leading-5 font-bold flex items-center">
-					{user.fullName}
+			<div className="flex-1 flex gap-3">
+				<img src={user.avatar} className="w-10 h-10 rounded-full object-cover" alt=""/>
+				<div className="w-[calc(100%-3.25rem)] text-left">
+					<div className="leading-5 font-bold truncate">
+						{user.fullName}
+					</div>
+					<div className="text-[color:var(--color-base-secondary)] truncate">@{user.username}</div>
 				</div>
-				<div className="text-[15px] text-[color:var(--color-base-secondary)]">@{user.username}</div>
 			</div>
 			<div>
 				{following ? (
