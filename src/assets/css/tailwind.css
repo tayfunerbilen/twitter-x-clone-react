@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    font-size: var(--font-size);
+}
+
 body {
-    @apply bg-[color:var(--background-primary)] text-[color:var(--color-base)] text-[15px];
+    @apply bg-[color:var(--background-primary)] text-[color:var(--color-base)] text-[0.938rem];
 }
 
 .shadow-box {
